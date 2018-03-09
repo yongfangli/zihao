@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding:0;
+}
+.progress{
+    width: 1000px;
+    margin:0 auto;
+}
+.p-title label{
+
+}
+.p-typeList{
+    display:flex;
+    list-style-type: none;
+}
+.p-title{  display: flex;padding-top:10px}
+.p-typeList li{margin-left:10px;}
+.list-u{display:flex;list-style-type: none; flex-wrap:wrap;  justify-content: space-around;}
+.device-img{width:200px;height:150px;}
+.list-u li{
+    margin-left:10px;
+
+}
+.p-list{
+    margin:0 auto;
+    padding: 11px 20px;
+}

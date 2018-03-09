@@ -49,3 +49,22 @@ body{
 .person p{
     margin-top: 0px;
 }
+h3 {
+    color: #f9f6f6;
+}
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.nav{
+    display: flex;
+    list-style-type: none;
+
+}
+
+.nav a:hover{
+    color:blue;
+}
+.nav li{
+    margin-left:30px;
+}
