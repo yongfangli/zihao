@@ -5,7 +5,78 @@
 <meta encode="utf-8">
 	<link rel="stylesheet"  type="text/css"  href="css/common.css"/>
 	<link rel="stylesheet"  type="text/css"  href="css/product.css"/>
+	<link rel="stylesheet"  type="text/css"  href="css/paging.css"/>
+	<link rel="stylesheet" type="text/css" href="imagenav/css/style.css">
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/paging.min.js"></script>
+	<script type="text/javascript" src="imagenav/js/carousel.js"></script>
+    <script type="text/javascript">
+		$(function(){
 
+            $(".carousel-content").carousel({
+                carousel : ".carousel",//轮播图容器
+                indexContainer : ".img-index",//下标容器
+                prev : ".carousel-prev",//左按钮
+                next : ".carousel-next",//右按钮
+                timing : 5000,//自动播放间隔
+                animateTime : 800,//动画时间
+                auto : true,//是否自动播放
+            });
+
+            $(".carousel-prev").hover(function(){
+                $(this).find("img").attr("src","imagenav/images/left_btn2.png");
+            },function(){
+                $(this).find("img").attr("src","imagenav/images/left_btn1.png");
+            });
+            $(".carousel-next").hover(function(){
+                $(this).find("img").attr("src","imagenav/images/right_btn2.png");
+            },function(){
+                $(this).find("img").attr("src","imagenav/images/right_btn1.png");
+            });
+
+
+           $(".p-typeList li").click(function () {
+               $(this).addClass("cur");
+                $(this).siblings().removeClass("cur");
+                var index=$(this).index();
+               html="";
+                if(index==0){
+
+                    for(var i=0;i<8;i++){
+                        html+="<li>\n" +
+                            "\t\t\t\t<div class=\"item-device\">\n" +
+                            "\t\t\t<img class=\"device-img\" src=\"image/light.jpg\" />\n" +
+                            "\t\t\t<span class=\"device-name\">车展灯</span>\n" +
+                            "\t\t\t\t</div>\n" +
+                            "\t\t</li>"
+					}
+
+				}
+               if(index==1){
+                   for(var i=0;i<8;i++){
+                   html+="<li>\n" +
+                       "\t\t\t\t<div class=\"item-device\">\n" +
+                       "\t\t\t<img class=\"device-img\" src=\"image/product4.jpg\" />\n" +
+                       "\t\t\t<span class=\"device-name\">音响</span>\n" +
+                       "\t\t\t\t</div>\n" +
+                       "\t\t</li>"
+               }}
+               if(index==2){
+                   for(var i=0;i<8;i++){
+                       html+="<li>\n" +
+                           "\t\t\t\t<div class=\"item-device\">\n" +
+                           "\t\t\t<img class=\"device-img\" src=\"image/product5.jpg\" />\n" +
+                           "\t\t\t<span class=\"device-name\">调音箱</span>\n" +
+                           "\t\t\t\t</div>\n" +
+                           "\t\t</li>"
+                   }
+			   }
+               $(".list-u").empty().append(html);
+            });
+
+		})
+
+	</script>
 <body>
 <div class="top">
 	<div class="right">
@@ -22,50 +93,86 @@
 	</div>
 </div>
 <div class="progress">
-	<div class="p-title"><label>设备类型:</label><ul class="p-typeList"><li>灯</li><li>音响</li><li>调音台</li></ul></div>
+	<div class="bar">我们选用的设备</div>
+	<div class="p-title"><label>设备类型:</label><ul class="p-typeList"><li class="cur">灯</li><li>音响</li><li>调音台</li></ul></div>
 	<div class="p-list">
     <ul class="list-u">
-
 			<li>
-				<div>
+				<div class="item-device">
 			<img class="device-img" src="image/light.jpg" />
 			<span class="device-name">车展灯</span>
 				</div>
 		</li>
 
 		<li>
-			<img class="device-img" src="image/light.jpg" />
-			<span class="device-name">车展灯</span>
+			<div class="item-device">
+				<img class="device-img" src="image/light.jpg" />
+				<span class="device-name">车展灯</span>
+			</div>
 		</li>
 
 		<li>
-			<img class="device-img" src="image/light.jpg" />
-			<span class="device-name">车展灯</span>
+			<div class="item-device">
+				<img class="device-img" src="image/light.jpg" />
+				<span class="device-name">车展灯</span>
+			</div>
 		</li>
 
 		<li>
-			<img class="device-img" src="image/light.jpg" />
-			<span class="device-name">车展灯</span>
+			<div class="item-device">
+				<img class="device-img" src="image/light.jpg" />
+				<span class="device-name">车展灯</span>
+			</div>
 		</li>
 
 		<li>
-			<img class="device-img" src="image/light.jpg" />
-			<span class="device-name">车展灯</span>
+			<div class="item-device">
+				<img class="device-img" src="image/light.jpg" />
+				<span class="device-name">车展灯</span>
+			</div>
 		</li>
 
 		<li>
-			<img class="device-img" src="image/light.jpg" />
-			<span class="device-name">车展灯</span>
+			<div class="item-device">
+				<img class="device-img" src="image/light.jpg" />
+				<span class="device-name">车展灯</span>
+			</div>
 		</li>
 
 	</ul>
+		<div class="box" id="box"></div>
+		<script>
+            var total=8;
+                var curpage=1;
+                $('#box').paging({
+                    initPageNo:1, // 初始页码
+                    totalPages: total, //总页数
+                    totalCount: '合计' + 20 + '条数据', // 条目总数
+                    slideSpeed: 600, // 缓动速度。单位毫秒
+                    jump: true, //是否支持跳转
+                    callback: function(page) { // 回调函数
+                        console.log(page);
+                    }
+                })
+
+
+		</script>
 	</div>
+	<div class="bar">舞台策划</div>
+	<div class="carousel-content">
+		<ul class="carousel spride">
+			<li><img src="image/product.jpg"  /></li>
+			<li><img src="image/product2.jpg"  /></li>
+			<li><img src="image/product4.jpg"  /></li>
+			<li><img src="image/product5.jpg"  /></li>
+			<li><img src="image/product6.jpg"  /></li>
+		</ul>
+		<ul class="img-index"></ul>
+		<div class="carousel-prev"><img src="imagenav/images/left_btn1.png"></div>
+		<div class="carousel-next"><img src="imagenav/images/right_btn1.png"></div>
+	</div>
+	<div class="bar">成品</div>
 </div>
-
-
-
-
-
 
 
 <div class="bottom">
@@ -82,3 +189,4 @@
 </div>
 </body>
 </head>
+</html>
