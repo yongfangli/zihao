@@ -4,8 +4,8 @@
 <head>
 	<title>上海子浩传播有限公司</title>
 	<%@include file="/WEB-INF/views/include/zihaohead.jsp" %>
-	 
-<link rel="stylesheet"  type="text/css"  href="${staticzihao}/modules/zihao/pc/css/index.css"/>
+	 <link rel="stylesheet"  type="text/css"  href="${staticzihao}/css/list.css"/>
+<link rel="stylesheet"  type="text/css"  href="${staticzihao}/css/indexother.css"/>
 <body>
 <div class="top">
     <div class="right">
@@ -22,8 +22,26 @@
     </div>
 </div>
 <div class="contents">
-  
-
+<div class="wrap">
+  <ul class="list">
+  <li>
+  <img class="img" src="${staticzihao}/image/light.jpg"/>
+      <span class="title"> 董事长子浩前往江西南昌考察市场董事长子浩前往江西南昌考察市场</span><span class="date">三天前</span><span><img class="icon" src="${staticzihao}/image/view.png"/>10</span>
+  </li>
+    <li>
+  <img class="img" src="${staticzihao}/image/light.jpg"/>
+      <span class="title"> 董事长子浩前往江西南昌考察市场董事长子浩前往江西南昌考察市场</span><span class="date">三天前</span><span><img class="icon" src="${staticzihao}/image/view.png"/>10</span>
+  </li>
+   <li>
+  <img class="img" src="${staticzihao}/image/light.jpg"/>
+      <span class="title"> 董事长子浩前往江西南昌考察市场董事长子浩前往江西南昌考察市场</span><span class="date">三天前</span><span><img class="icon" src="${staticzihao}/image/view.png"/>10</span>
+  </li>
+   <li>
+  <img class="img" src="${staticzihao}/image/light.jpg"/>
+      <span class="title"> 董事长子浩前往江西南昌考察市场董事长子浩前往江西南昌考察市场</span><span class="date">三天前</span><span><img class="icon" src="${staticzihao}/image/view.png"/>10</span>
+  </li>
+  </ul>
+  </div>
 </div>
 
 <div class="bottom">
@@ -34,7 +52,6 @@
             <p>
                 Copyright 2018 上海子浩传播有限公司</p>
         </div>
-
     </div>
 
 </div>

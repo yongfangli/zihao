@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9c57484-59e1-4528-bef7-c3a1dcb43364" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/pom.xml" afterPath="$PROJECT_DIR$/backend/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/main/resources/jeesite.properties" afterPath="$PROJECT_DIR$/backend/src/main/resources/jeesite.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/main/resources/spring-mvc.xml" afterPath="$PROJECT_DIR$/backend/src/main/resources/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/main/webapp/WEB-INF/tags/sys/ckfinder.tag" afterPath="$PROJECT_DIR$/backend/src/main/webapp/WEB-INF/tags/sys/ckfinder.tag" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/main/webapp/WEB-INF/views/include/taglib.jsp" afterPath="$PROJECT_DIR$/backend/src/main/webapp/WEB-INF/views/include/taglib.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/backend/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/main/webapp/static/ckfinder/ckfinder.html" afterPath="$PROJECT_DIR$/backend/src/main/webapp/static/ckfinder/ckfinder.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front/indexother.html" afterPath="$PROJECT_DIR$/front/indexother.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front/newsDetail.html" afterPath="$PROJECT_DIR$/front/newsDetail.html" />
-    </list>
+    <list default="true" id="b9c57484-59e1-4528-bef7-c3a1dcb43364" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -24,88 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="indexother.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/indexother.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="73" lean-forward="true" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="util.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/js/util.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="newsDetail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/newsDetail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="46" column="52" lean-forward="true" selection-start-line="45" selection-start-column="64" selection-end-line="46" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/css/common.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1121">
-              <caret line="59" column="18" lean-forward="false" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/activity.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="indexother.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/css/indexother.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="product.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/product.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="74" lean-forward="true" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/front/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -325,7 +233,7 @@
       <workItem from="1520909815825" duration="9296000" />
       <workItem from="1520934535919" duration="1342000" />
       <workItem from="1521000015825" duration="6333000" />
-      <workItem from="1521077915888" duration="8090000" />
+      <workItem from="1521077915888" duration="8270000" />
     </task>
     <task id="LOCAL-00001" summary="更新首页">
       <created>1520480486486</created>
@@ -338,13 +246,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84455000" />
+    <option name="totallyTimeSpent" value="84635000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20684524" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20684524" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -472,7 +379,7 @@
     <entry file="file://$PROJECT_DIR$/front/newsDetail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
-          <caret line="46" column="52" lean-forward="true" selection-start-line="45" selection-start-column="64" selection-end-line="46" selection-end-column="52" />
+          <caret line="46" column="52" lean-forward="false" selection-start-line="45" selection-start-column="64" selection-end-line="46" selection-end-column="52" />
           <folding />
         </state>
       </provider>
@@ -480,7 +387,7 @@
     <entry file="file://$PROJECT_DIR$/front/indexother.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="7" column="73" lean-forward="true" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
+          <caret line="7" column="73" lean-forward="false" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
           <folding />
         </state>
       </provider>
@@ -496,7 +403,7 @@
     <entry file="file://$PROJECT_DIR$/front/product.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="11" column="74" lean-forward="true" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
+          <caret line="11" column="74" lean-forward="false" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
           <folding />
         </state>
       </provider>
