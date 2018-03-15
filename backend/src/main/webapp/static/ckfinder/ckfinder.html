@@ -13,6 +13,7 @@
 	//<![CDATA[
 	(function()
 	{
+		
 		var config = {};
 		var get = CKFinder.tools.getUrlParam;
 		var getBool = function( v )
@@ -106,7 +107,8 @@
 					var funcNum = get( 'CKEditorFuncNum' );
 					if ( parentWindow['CKEDITOR'] )
 					{
-						config.selectActionFunction = function( fileUrl, data )
+					
+						config.selectActionFunction = function(fileUrl, data )
 						{
 							parentWindow['CKEDITOR'].tools.callFunction( funcNum, fileUrl, data );
 						};
@@ -116,6 +118,7 @@
 					break;
 
 				default:
+					
 					if ( parentWindow && parentWindow['FCK'] && parentWindow['SetUrl'] )
 					{
 						action = 'fckeditor' ;

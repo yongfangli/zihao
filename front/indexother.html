@@ -9,28 +9,50 @@
 	<link rel="shotcut icon" type="image/png" href="logo.png"/>
 	<script type="text/javascript" src="imagenav/js/jquery.min.js"></script>
 	<script type="text/javascript" src="imagenav/js/carousel.js"></script>
+
 	<script type="text/javascript">
         $(function(){
-            $(".carousel-content").carousel({
-                carousel : ".carousel",//轮播图容器
-                indexContainer : ".img-index",//下标容器
-                prev : ".carousel-prev",//左按钮
-                next : ".carousel-next",//右按钮
-                timing : 5000,//自动播放间隔
-                animateTime : 800,//动画时间
-                auto : true,//是否自动播放
-            });
 
-            $(".carousel-prev").hover(function(){
-                $(this).find("img").attr("src","imagenav/images/left_btn2.png");
-            },function(){
-                $(this).find("img").attr("src","imagenav/images/left_btn1.png");
-            });
-            $(".carousel-next").hover(function(){
-                $(this).find("img").attr("src","imagenav/images/right_btn2.png");
-            },function(){
-                $(this).find("img").attr("src","imagenav/images/right_btn1.png");
-            });
+            $.ajax({
+                url:"http://localhost:8081/admin/json/activity/list",
+				success:function (data) {
+                    if(data.code==200){
+                        var list=data.body;
+                        if(list.length<=0){
+                            this.noData();
+						}else{
+                            html="";
+                       $.each(list,function (i) {
+						   html+="<li><a href='newsDetail.html?id="+list[i].id+"'><img src='"+list[i].img+"' alt='"+list[i].name+"' /></a></li>";
+                         })
+							$(".carousel").empty().append(html);
+                            $(".carousel-content").carousel({
+                                carousel : ".carousel",//轮播图容器
+                                indexContainer : ".img-index",//下标容器
+                                prev : ".carousel-prev",//左按钮
+                                next : ".carousel-next",//右按钮
+                                timing : 5000,//自动播放间隔
+                                animateTime : 800,//动画时间
+                                auto : true,//是否自动播放
+                            });
+
+                            $(".carousel-prev").hover(function(){
+                                $(this).find("img").attr("src","imagenav/images/left_btn2.png");
+                            },function(){
+                                $(this).find("img").attr("src","imagenav/images/left_btn1.png");
+                            });
+                            $(".carousel-next").hover(function(){
+                                $(this).find("img").attr("src","imagenav/images/right_btn2.png");
+                            },function(){
+                                $(this).find("img").attr("src","imagenav/images/right_btn1.png");
+                            });
+                        }
+					}
+                }
+
+			})
+
+
         });
 	</script>
 <body>
@@ -51,13 +73,8 @@
 <div class="news">
 	<div class="carousel-content">
 		<ul class="carousel">
-			<li><img src="image/1.jpg"  /></li>
-			<li><img src="image/2.jpg" /></li>
-			<li><img src="image/3.jpg"  /></li>
-			<li><img src="image/4.jpg"  /></li>
-			<li><img src="image/5.jpg"  /></li>
-			<li><img src="image/6.jpg"  /></li>
-			<li><img src="image/7.jpg"  /></li>
+			<li><a><img src="image/1.jpg"  /></a></li>
+
 		</ul>
 		<ul class="img-index"></ul>
 		<div class="carousel-prev"><img src="imagenav/images/left_btn1.png"></div>

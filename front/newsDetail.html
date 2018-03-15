@@ -5,10 +5,40 @@
     <link rel="stylesheet"  type="text/css"  href="css/common.css"/>
     <link rel="stylesheet"  type="text/css"  href="css/activity.css"/>
     <link rel="shotcut icon" type="image/png" href="logo.png"/>
+    <script type="text/javascript" src="imagenav/js/jquery.min.js"></script>
     <link rel="stylesheet"  type="text/css"  href="css/indexother.css"/>
+
+    <script type="text/javascript">
+
+        $(function() {
+            (function ($) {
+                $.getUrlParam = function (name) {
+                    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+                    var r = window.location.search.substr(1).match(reg);
+                    if (r != null) return unescape(r[2]); return null;
+                }
+            })(jQuery);
+                $.ajax({
+                    url: "http://localhost:8081/admin/json/activity/detail/"+$.getUrlParam("id"),
+                    success: function (data) {
+                        if (data.code == 200) {
+                            var detail = data.body;
+                            $(".newstitle").html(detail.name);
+                            $(".detail p").html(detail.content);
+                            $("#publishDate").html(detail.startTime+"-"+detail.endTime);
+                            $("#address").html(detail.address);
+                        }else{
+                            this.nodata();
+                    }
+                    }
+
+                })
+            })
+    </script>
     <!-- If you'd like to support IE8 -->
     <meta charset="UTF-8">
     <title>公司新闻详情</title>
+
 </head>
 <body>
 <div class="top">
@@ -29,9 +59,9 @@
     <h3 class="newstitle">英雄联盟春季赛上海站</h3>
     <hr style=" height:2px;border:none;border-top:4px solid #185598;"/>
     <div class="attr">
-        <div><label>发布时间：</label><span>2018/02/21 09:00 星期三</span></div>
-        <div><label>发布人：</label><span>上海市嘉欣路325号</span></div>
+        <div><label>发布时间：</label><span  id="publishDate">2018/02/21 09:00 星期三</span></div>
 
+        <div><label>发布地址：</label><span id="address">上海市嘉欣路325号</span></div>
     </div>
     <div class="detail">
         <p>　　
@@ -64,7 +94,6 @@
             　　虽然我们通常会将英雄的游戏玩法及视觉更新与全新的传记和/或趣味故事相结合，但在不更改游戏里任何内容时我们也会有一些“更新角色”的办法。
 
             　　有时候，我们会在背景故事环境下直观地展示角色，而非通过召唤师峡谷这种抽象的游戏环境。大家很可能已经观赏过全新的安妮视频，阅读过最新的厄运小姐漫画了。相较单纯依靠台词和玩法，这类形式的叙事可以深入英雄的主题和性格。
-
 
 
             　　其他时候，我们会在宇宙官网发布全新的背景故事内容 – 它可能是任何形式的，从阐述性的引用到完整的短篇故事(2017年的德玛西亚和瓦斯塔亚有不少这类内容)。这是另外一种透过我们发布过的所有内容建构世界观的方法，我们相信，如果一则故事未能向玩家透露有关角色或游戏世界的新讯息，那它就没能完全发挥它的作用。

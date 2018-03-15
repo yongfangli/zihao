@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9c57484-59e1-4528-bef7-c3a1dcb43364" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front/css/product.css" afterPath="$PROJECT_DIR$/front/css/product.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front/product.html" afterPath="$PROJECT_DIR$/front/product.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/pom.xml" afterPath="$PROJECT_DIR$/backend/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/main/resources/jeesite.properties" afterPath="$PROJECT_DIR$/backend/src/main/resources/jeesite.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/main/resources/spring-mvc.xml" afterPath="$PROJECT_DIR$/backend/src/main/resources/spring-mvc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/main/webapp/WEB-INF/tags/sys/ckfinder.tag" afterPath="$PROJECT_DIR$/backend/src/main/webapp/WEB-INF/tags/sys/ckfinder.tag" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/main/webapp/WEB-INF/views/include/taglib.jsp" afterPath="$PROJECT_DIR$/backend/src/main/webapp/WEB-INF/views/include/taglib.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/backend/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/main/webapp/static/ckfinder/ckfinder.html" afterPath="$PROJECT_DIR$/backend/src/main/webapp/static/ckfinder/ckfinder.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front/indexother.html" afterPath="$PROJECT_DIR$/front/indexother.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front/newsDetail.html" afterPath="$PROJECT_DIR$/front/newsDetail.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,7 +29,17 @@
         <entry file="file://$PROJECT_DIR$/front/indexother.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="73" />
+              <caret line="7" column="73" lean-forward="true" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="util.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/js/util.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -30,8 +48,8 @@
       <file leaf-file-name="newsDetail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front/newsDetail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="589">
+              <caret line="46" column="52" lean-forward="true" selection-start-line="45" selection-start-column="64" selection-end-line="46" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -60,7 +78,7 @@
       <file leaf-file-name="indexother.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front/css/indexother.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
+            <state relative-caret-position="95">
               <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
@@ -70,28 +88,18 @@
       <file leaf-file-name="product.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front/product.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="173" column="29" lean-forward="false" selection-start-line="173" selection-start-column="29" selection-end-line="173" selection-end-column="29" />
+            <state relative-caret-position="209">
+              <caret line="11" column="74" lean-forward="true" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/front/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="product.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/front/css/product.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="33" column="30" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -104,6 +112,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -113,6 +122,9 @@
       <find>media</find>
       <find>p-typeList</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -132,11 +144,13 @@
         <option value="$PROJECT_DIR$/renqi/newsDetail.html" />
         <option value="$PROJECT_DIR$/renqi/indexother.html" />
         <option value="$PROJECT_DIR$/renqi/css/indexother.css" />
-        <option value="$PROJECT_DIR$/front/indexother.html" />
         <option value="$PROJECT_DIR$/front/css/indexother.css" />
         <option value="$PROJECT_DIR$/front/css/common.css" />
         <option value="$PROJECT_DIR$/front/product.html" />
         <option value="$PROJECT_DIR$/front/css/product.css" />
+        <option value="$PROJECT_DIR$/front/indexother.html" />
+        <option value="$PROJECT_DIR$/front/js/util.js" />
+        <option value="$PROJECT_DIR$/front/newsDetail.html" />
       </list>
     </option>
   </component>
@@ -209,19 +223,30 @@
         <subPane>
           <expand>
             <path>
-              <item name="子浩有限公司" type="b2602c69:ProjectViewProjectNode" />
-              <item name="子浩有限公司" type="462c0819:PsiDirectoryNode" />
+              <item name="zihao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zihao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="子浩有限公司" type="b2602c69:ProjectViewProjectNode" />
-              <item name="子浩有限公司" type="462c0819:PsiDirectoryNode" />
+              <item name="zihao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zihao" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zihao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zihao" type="462c0819:PsiDirectoryNode" />
               <item name="front" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="子浩有限公司" type="b2602c69:ProjectViewProjectNode" />
-              <item name="子浩有限公司" type="462c0819:PsiDirectoryNode" />
+              <item name="zihao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zihao" type="462c0819:PsiDirectoryNode" />
               <item name="front" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zihao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zihao" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -297,7 +322,10 @@
       <workItem from="1520495808620" duration="12000" />
       <workItem from="1520583305993" duration="999000" />
       <workItem from="1520585597474" duration="4669000" />
-      <workItem from="1520909815825" duration="8698000" />
+      <workItem from="1520909815825" duration="9296000" />
+      <workItem from="1520934535919" duration="1342000" />
+      <workItem from="1521000015825" duration="6333000" />
+      <workItem from="1521077915888" duration="8090000" />
     </task>
     <task id="LOCAL-00001" summary="更新首页">
       <created>1520480486486</created>
@@ -310,7 +338,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68092000" />
+    <option name="totallyTimeSpent" value="84455000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -349,7 +377,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/renqi/index.html" />
     <entry file="file://$PROJECT_DIR$/renqi/css/index.css" />
     <entry file="file://$PROJECT_DIR$/renqi/index.html" />
     <entry file="file://$PROJECT_DIR$/renqi/css/index.css" />
@@ -399,7 +426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -407,7 +433,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="16" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -415,46 +440,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/css/normalize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/js/full-screen-slide.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/front/css/normalize.css" />
+    <entry file="file://$PROJECT_DIR$/front/js/full-screen-slide.min.js" />
     <entry file="file://$PROJECT_DIR$/front/css/indexother.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
+        <state relative-caret-position="95">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/newsDetail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -467,26 +461,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/indexother.html">
+    <entry file="file://$PROJECT_DIR$/front/js/util.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="73" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/product.html">
+    <entry file="file://$PROJECT_DIR$/front/newsDetail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="173" column="29" lean-forward="false" selection-start-line="173" selection-start-column="29" selection-end-line="173" selection-end-column="29" />
+        <state relative-caret-position="589">
+          <caret line="46" column="52" lean-forward="true" selection-start-line="45" selection-start-column="64" selection-end-line="46" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/indexother.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="73" lean-forward="true" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/front/css/product.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
+        <state relative-caret-position="349">
           <caret line="33" column="30" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="74" lean-forward="true" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
