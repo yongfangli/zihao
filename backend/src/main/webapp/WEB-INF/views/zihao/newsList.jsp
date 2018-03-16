@@ -24,22 +24,16 @@
 <div class="contents">
 <div class="wrap">
   <ul class="list">
+  <c:forEach items="${page.list}" var="news">
+    
   <li>
-  <img class="img" src="${staticzihao}/image/light.jpg"/>
-      <span class="title"> 董事长子浩前往江西南昌考察市场董事长子浩前往江西南昌考察市场</span><span class="date">三天前</span><span><img class="icon" src="${staticzihao}/image/view.png"/>10</span>
+   <a href="${ctxzihao}/companyNews/detail/${news.id}">
+      <img class="img" src="${news.img}"/>
+      <span class="title"> ${news.title}</span><span class="date">${news.dateFormat}</span><span><img class="icon" src="${staticzihao}/image/view.png"/>${news.viewCount }</span>
+   </a>
   </li>
-    <li>
-  <img class="img" src="${staticzihao}/image/light.jpg"/>
-      <span class="title"> 董事长子浩前往江西南昌考察市场董事长子浩前往江西南昌考察市场</span><span class="date">三天前</span><span><img class="icon" src="${staticzihao}/image/view.png"/>10</span>
-  </li>
-   <li>
-  <img class="img" src="${staticzihao}/image/light.jpg"/>
-      <span class="title"> 董事长子浩前往江西南昌考察市场董事长子浩前往江西南昌考察市场</span><span class="date">三天前</span><span><img class="icon" src="${staticzihao}/image/view.png"/>10</span>
-  </li>
-   <li>
-  <img class="img" src="${staticzihao}/image/light.jpg"/>
-      <span class="title"> 董事长子浩前往江西南昌考察市场董事长子浩前往江西南昌考察市场</span><span class="date">三天前</span><span><img class="icon" src="${staticzihao}/image/view.png"/>10</span>
-  </li>
+    
+  </c:forEach>
   </ul>
   </div>
 </div>

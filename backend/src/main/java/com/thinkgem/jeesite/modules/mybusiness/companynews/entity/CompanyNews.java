@@ -4,6 +4,7 @@
 package com.thinkgem.jeesite.modules.mybusiness.companynews.entity;
 
 import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.NotEmpty;
 
 import com.thinkgem.jeesite.common.persistence.DataEntity;
 
@@ -18,7 +19,8 @@ public class CompanyNews extends DataEntity<CompanyNews> {
 	private String title;		// 新闻标题
 	private String content;		// 新闻内容
 	private String viewCount;		// 浏览次数
-	
+	private String img;//图片地址
+	private String dateFormat;//时间格式化
 	public CompanyNews() {
 		super();
 	}
@@ -36,7 +38,15 @@ public class CompanyNews extends DataEntity<CompanyNews> {
 		this.title = title;
 	}
 	
-	@Length(min=0, max=1000, message="新闻内容长度必须介于 0 和 1000 之间")
+	public String getImg() {
+		return img;
+	}
+
+	public void setImg(String img) {
+		this.img = img;
+	}
+
+	@NotEmpty
 	public String getContent() {
 		return content;
 	}
@@ -52,6 +62,14 @@ public class CompanyNews extends DataEntity<CompanyNews> {
 
 	public void setViewCount(String viewCount) {
 		this.viewCount = viewCount;
+	}
+
+	public String getDateFormat() {
+		return dateFormat;
+	}
+
+	public void setDateFormat(String dateFormat) {
+		this.dateFormat = dateFormat;
 	}
 	
 }

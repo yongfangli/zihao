@@ -7,6 +7,7 @@
 		a.title AS "title",
 		a.content AS "content",
 		a.view_count AS "viewCount",
+		a.img AS 'img',
 		a.create_by AS "createBy.id",
 		a.create_date AS "createDate",
 		a.update_by AS "updateBy.id",
@@ -73,6 +74,7 @@
 			title,
 			content,
 			view_count,
+			img,
 			create_by,
 			create_date,
 			update_by,
@@ -83,6 +85,7 @@
 			#{title},
 			#{content},
 			#{viewCount},
+			#{img},
 			#{createBy.id},
 			#{createDate},
 			#{updateBy.id},
@@ -95,6 +98,7 @@
 		UPDATE zh_company_news SET 	
 			title = #{title},
 			content = #{content},
+			img=#{img},
 			remarks = #{remarks}
 		WHERE id = #{id}
 	</update>

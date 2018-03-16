@@ -39,10 +39,18 @@
 				<form:input path="title" htmlEscape="false" maxlength="100" class="input-xlarge "/>
 			</div>
 		</div>
+			<div class="control-group">
+			<label class="control-label">新闻图片：</label>
+			<div class="controls">
+				<form:hidden id="img" path="img" htmlEscape="false" maxlength="255" class="input-xlarge"/>
+				<sys:ckfinder input="img" type="images" uploadPath="/activity/activity" selectMultiple="false"/>
+			</div>
+		</div>
 		<div class="control-group">
 			<label class="control-label">新闻内容：</label>
 			<div class="controls">
-				<form:textarea path="content" htmlEscape="false" rows="4" maxlength="1000" class="input-xxlarge "/>
+				<form:textarea id="content" htmlEscape="true" path="content" rows="4" maxlength="200" class="input-xxlarge"/>
+				<sys:ckeditor replace="content" uploadPath="/companyNews/companyNews" />
 			</div>
 		</div>
 		<div class="control-group">

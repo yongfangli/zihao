@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.thinkgem.jeesite.common.persistence.Page;
 import com.thinkgem.jeesite.common.service.CrudService;
 import com.thinkgem.jeesite.modules.mybusiness.companynews.entity.CompanyNews;
+import com.thinkgem.jeesite.modules.mybusiness.activity.entity.Activity;
 import com.thinkgem.jeesite.modules.mybusiness.companynews.dao.CompanyNewsDao;
 
 /**
@@ -42,6 +43,13 @@ public class CompanyNewsService extends CrudService<CompanyNewsDao, CompanyNews>
 	@Transactional(readOnly = false)
 	public void delete(CompanyNews companyNews) {
 		super.delete(companyNews);
+	}
+
+	public List<CompanyNews> findRecentlyNews(int num) {
+		Page<CompanyNews> aPage=new Page<CompanyNews>(1,num);
+		aPage.setOrderBy("create_date desc");
+		aPage=findPage(aPage, new CompanyNews());
+		return aPage.getList();
 	}
 	
 }

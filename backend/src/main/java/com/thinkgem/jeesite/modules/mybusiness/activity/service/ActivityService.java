@@ -50,7 +50,7 @@ public class ActivityService extends CrudService<ActivityDao, Activity> {
 	 */
 	public List<Activity> findRecentlyActivity(int num){
 		Page<Activity> aPage=new Page<Activity>(1,num);
-		aPage.setOrderBy("start_time asc");
+		aPage.setOrderBy("start_time desc");
 		aPage=findPage(aPage, new Activity());
 		return aPage.getList();
 	}

@@ -2,7 +2,7 @@
 <%@ include file="/WEB-INF/views/include/taglib.jsp"%>
 <html>
 <head>
-	<title>上海子浩传播有限公司</title>
+	<title>首页</title>
 	<%@include file="/WEB-INF/views/include/zihaohead.jsp" %>
 	<link rel="stylesheet"  type="text/css"  href="${staticzihao}/css/indexother.css"/>
 	<script type="text/javascript" src="${staticzihao}/imagenav/js/carousel.js"></script>
@@ -28,9 +28,70 @@
                             },function(){
                                 $(this).find("img").attr("src","${staticzihao}"+"/imagenav/images/right_btn1.png");
                             });
-
-
+                                                 
+                            $("#contactus").submit(function(){
+                            	
+                            	if($("#name").val()==""||$("#name").val()==null){
+                            		$("#namemsg").show();
+                            		return false;
+                            	}
+                            	 if($("#phone").val()==""||$("#phone").val()==null){
+                            		$("#phonemsg").show();
+                            		return false;
+                            	}
+                            	if(!checkPhone($("#phone").val())){
+                            		$("#phonemsg").empty().html("手机号码格式有误，请重新输入");
+                            		$("#phonemsg").show();
+                            		return false;
+                            	}
+                            	$.ajax({
+                					type:"post",
+                					async:false,
+                					url:"${ctxzihao}/contactus/save",
+                					dataType:"json",
+                					cache:false,
+                					data:$('#contactus').serializeArray(),
+                					success : function(data) {
+                						if(data.code==200){
+                							alert(data.msg);
+                							$("#phone").val("");
+                							$("#name").val("");
+                							$("#detail").val("");
+                						}
+                					}
+                				}); 
+                            	return false;
+                            })
         });
+        function scrollto(flag){
+        	var time;
+        	var time2;
+        	if(flag==2){
+        		
+        		function push(){document.body.scrollTop=350;
+        			clearInterval(time);};
+        		 time=setInterval(push,500);
+        		 
+        	}
+        	
+        	if(flag==4){
+        		function push2(){document.body.scrollTop=900;
+        		 clearInterval(time2);};
+        		 time2=setInterval(push2,500);
+        		
+        	}
+        	
+        }
+        function hidmsg(){
+        	$("#namemsg").hide();
+        	$("#phonemsg").hide();
+        }  
+        function checkPhone(phone){ 
+            if(!(/^1[34578]\d{9}$/.test(phone))){ 
+                return false; 
+            } else
+            	return true;
+        }
 	</script>
 <body>
 <div class="top">
@@ -41,9 +102,9 @@
 	<div class="left">
     <ul class="nav">
 		<li><a href="${ctxzihao}/index">首页</a></li>
-		<li><a href="indexother.html">公司介绍</a></li>
+		<li><a  onclick="scrollto(2)" href="javascript:void(0)">公司介绍</a></li>
 		<li><a href="${ctxzihao}/product">产品</a></li>
-		<li><a href="indexother.html">联系我们</a></li>
+		<li><a  onclick="scrollto(4)" href="javascript:void(0)">联系我们</a></li>
 	</ul>
 	</div>
 </div>
@@ -66,22 +127,12 @@
 	<div class="notice">
 		    <div class="header">
 			    <label >最新新闻</label>
-				<a class="more">更多....</a>
+				<a href="${ctxzihao}/companyNews/list" class="more">更多....</a>
 		    </div>
 			<ul class="noticeList">
-				<li><a href="newsDetail.html">今年上半年公司将会往互联网方向寻求新的机遇,一起实现线下线上互动</a></li>
-				<li><a href="newsDetail.html">今年上半年公司将会往互联网方向寻求新的机遇,一起实现线下线上互动</a></li>
-				<li><a href="newsDetail.html">今年上半年公司将会往互联网方向寻求新的机遇,一起实现线下线上互动</a></li>
-				<li><a href="newsDetail.html">今年上半年公司将会往互联网方向寻求新的机遇,一起实现线下线上互动</a></li>
-				<li><a href="newsDetail.html">今年上半年公司将会往互联网方向寻求新的机遇,一起实现线下线上互动</a></li>
-				<li><a href="newsDetail.html">今年上半年公司将会往互联网方向寻求新的机遇,一起实现线下线上互动</a></li>
-				<li><a href="newsDetail.html">今年上半年公司将会往互联网方向寻求新的机遇,一起实现线下线上互动</a></li>
-				<li><a href="newsDetail.html">今年上半年公司将会往互联网方向寻求新的机遇,一起实现线下线上互动</a></li>
-				<li><a href="newsDetail.html">今年上半年公司将会往互联网方向寻求新的机遇,一起实现线下线上互动</a></li>
-				<li><a href="newsDetail.html">今年上半年公司将会往互联网方向寻求新的机遇,一起实现线下线上互动</a></li>
-				<li><a href="newsDetail.html">今年上半年公司将会往互联网方向寻求新的机遇,一起实现线下线上互动</a></li>
-				<li><a href="newsDetail.html">今年上半年公司将会往互联网方向寻求新的机遇,一起实现线下线上互动</a></li>
-
+			<c:forEach items="${newsList}" var="news"> 
+				<li><a href="${ctxzihao}/companyNews/detail/${news.id}">${news.title}</a></li>
+            </c:forEach>
 			</ul>
 
 	</div>
@@ -109,12 +160,12 @@
 <div class="contactUs">
 	<div class="contactBody">
     <div class="notice"><label>如果你有什么需求，请输入你的信息，我们会尽快回复</label></div>
-    <div class="contactForm"><form action="contactus.html">
-       <div> <input placeholder="你的联系电话" name="phone" type="text"></div>
-		<div> <input placeholder="你的联系电话" name="phone" type="text"></div>
-		<div> <input placeholder="你的联系电话" name="phone" type="text"></div>
-		<div> <input placeholder="你的联系电话" name="phone" type="text"></div>
-		<div> <input value="提交"  type="submit"></div>
+    <div class="contactForm">
+    <form action="${ctxzihao}/contactus/save" method="post" id="contactus">
+       <div> <input placeholder="你的名字" oninput="hidmsg()" name="name" id="name" type="text"><div><span id="namemsg" style="display:none;color:red;margin-left:5px;font-size:0.5rem">名字不能为空</span></div></div>
+		<div> <input placeholder="你的联系电话" oninput="hidmsg()" name="phone" id="phone" type="text"><div><span id="phonemsg" style="display:none;color:red;margin-left:5px;font-size:0.5rem">电话不能为空</span></div></div>
+		<div> <textarea id="detail" rows="4" cols="22" placeholder="详情" name="detail" ></textarea></div>
+		<div> <input style="background-color:#9995a9" value="提交"  type="submit"></div>
     </form>
 	</div>
     </div>

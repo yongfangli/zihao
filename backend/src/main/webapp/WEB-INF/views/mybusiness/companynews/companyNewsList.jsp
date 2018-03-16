@@ -37,7 +37,6 @@
 		<thead>
 			<tr>
 				<th>新闻标题</th>
-				<th>新闻内容</th>
 				<th>浏览次数</th>
 				<th>创建人</th>
 				<th>更新时间</th>
@@ -50,9 +49,6 @@
 				<td><a href="${ctx}/companynews/companyNews/form?id=${companyNews.id}">
 					${companyNews.title}
 				</a></td>
-				<td>
-					${companyNews.content}
-				</td>
 				<td>
 					${companyNews.viewCount}
 				</td>

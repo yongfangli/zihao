@@ -2,7 +2,7 @@
 <%@ include file="/WEB-INF/views/include/taglib.jsp"%>
 <html>
 <head>
-	<title>活动详情</title>
+	<title>新闻详情</title>
 	<%@include file="/WEB-INF/views/include/zihaohead.jsp" %>
 	 <link rel="stylesheet"  type="text/css"  href="${ctxStatic}/modules/zihao/pc/css/activity.css"/>
 <link rel="stylesheet"  type="text/css"  href="${ctxStatic}/modules/zihao/pc/css/index.css"/>
@@ -23,15 +23,13 @@
     </div>
 </div>
 <div class="contents">
-    <h3 class="newstitle">${activity.name}</h3>
+    <h3 class="newstitle">${news.title}</h3>
     <hr style=" height:2px;border:none;border-top:4px solid #185598;"/>
     <div class="attr">
-        <div><label>发布时间：</label><span  id="publishDate"><fmt:formatDate value="${activity.startTime}" pattern="yyyy/MM/dd HH:mm"/>--<fmt:formatDate value="${activity.endTime}" pattern="yyyy/MM/dd HH:mm"/></span></div>
-
-        <div><label>发布地址：</label><span id="address">${activity.address}</span></div>
+        <div><label>发布时间：</label><span  id="publishDate"><fmt:formatDate value="${news.createDate}" pattern="yyyy/MM/dd HH:mm"/></span></div>
     </div>
     <div class="detail">
-            　　${activity.content }
+            　　${news.content}
     </div>
 
 </div>
