@@ -91,3 +91,7 @@ body{
 	display: inline-block;
    border-radius:2px;
 }
+.submit{
+	   background-color: #3e4b6d;
+    color: #fbfbfb;
+}
