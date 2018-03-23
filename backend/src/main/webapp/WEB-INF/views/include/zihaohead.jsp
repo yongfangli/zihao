@@ -2,3 +2,6 @@
 <meta http-equiv="Expires" content="0"><meta http-equiv="Cache-Control" content="no-cache"><meta http-equiv="Cache-Control" content="no-store">
 	<link rel="shotcut icon" type="image/png" href="${staticzihao}/logo.png"/>
 	<script type="text/javascript" src="${staticzihao}/imagenav/js/jquery.min.js"></script>
+<script>
+
+</script>

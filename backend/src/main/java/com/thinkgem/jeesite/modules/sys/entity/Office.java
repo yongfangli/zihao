@@ -37,7 +37,7 @@ public class Office extends TreeEntity<Office> {
 	private User primaryPerson;//主负责人
 	private User deputyPerson;//副负责人
 	private List<String> childDeptList;//快速添加子部门
-	
+	private String businessArea; //业务范畴
 	public Office(){
 		super();
 //		this.sort = 30;
@@ -214,4 +214,13 @@ public class Office extends TreeEntity<Office> {
 	public String toString() {
 		return name;
 	}
+
+	public String getBusinessArea() {
+		return businessArea;
+	}
+
+	public void setBusinessArea(String businessArea) {
+		this.businessArea = businessArea;
+	}
+	
 }

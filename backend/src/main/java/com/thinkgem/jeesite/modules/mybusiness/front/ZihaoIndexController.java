@@ -1,10 +1,11 @@
 package com.thinkgem.jeesite.modules.mybusiness.front;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -16,8 +17,12 @@ import com.thinkgem.jeesite.modules.cms.utils.RelativeDateFormat;
 import com.thinkgem.jeesite.modules.mybusiness.activity.service.ActivityService;
 import com.thinkgem.jeesite.modules.mybusiness.companynews.entity.CompanyNews;
 import com.thinkgem.jeesite.modules.mybusiness.companynews.service.CompanyNewsService;
+import com.thinkgem.jeesite.modules.mybusiness.companyprogress.entity.CompanyProgress;
+import com.thinkgem.jeesite.modules.mybusiness.companyprogress.service.CompanyProgressService;
 import com.thinkgem.jeesite.modules.mybusiness.contactus.entity.Contactus;
 import com.thinkgem.jeesite.modules.mybusiness.contactus.service.ContactusService;
+import com.thinkgem.jeesite.modules.sys.entity.Office;
+import com.thinkgem.jeesite.modules.sys.service.OfficeService;
 
 @Controller
 public class ZihaoIndexController extends BaseController {
@@ -27,7 +32,10 @@ public class ZihaoIndexController extends BaseController {
 	private CompanyNewsService cnewsService;
 	@Autowired
 	private ContactusService contactusService;
-
+	@Autowired
+    private OfficeService officeService;
+	@Autowired
+    private CompanyProgressService companyProgressService;
 	/**
 	 * 首页
 	 * 
@@ -106,6 +114,29 @@ public class ZihaoIndexController extends BaseController {
 
 	}
 
+
+	/**
+	 * 公司详情
+	 */
+	@RequestMapping(value = "/companyIntro")
+	public String companyIntro(Model model) {
+		//在数据库里面把公司的id设为1
+		Office office=officeService.get("1");
+	    model.addAttribute("office",office);
+	    CompanyProgress companyProgress=new CompanyProgress();
+	    companyProgress.setCompany(office);
+	    List<CompanyProgress> companyProgresses=companyProgressService.findList(companyProgress);
+	    model.addAttribute("progressList",companyProgresses);
+	    return "zihao/companyIntro";
+	}
+	/**
+	 * 联系我们添加
+	 */
+	@RequestMapping(value = "/contactus")
+	public String saveContactus() {
+		return "zihao/contactus";
+	}
+	
 	/**
 	 * 联系我们添加
 	 */

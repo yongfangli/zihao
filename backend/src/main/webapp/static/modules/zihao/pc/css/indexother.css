@@ -38,11 +38,7 @@ body{
     text-decoration: none;
    color:#0a0a0a;
 }
- .contactUs{
-     display: flex;
-     justify-content: center;
-     //background:#3e4b6d;
- }
+
  .detailcontent{
      padding:40px;
  }
